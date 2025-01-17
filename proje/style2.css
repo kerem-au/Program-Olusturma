@@ -1,0 +1,157 @@
+body {
+    background: linear-gradient(to right, #313131, #8f8f8f);
+    background-size: cover;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+.ilk {
+    text-align: center;
+    justify-content: center;
+    margin: 100px;
+    font-weight: bold;
+}
+
+.gonder {
+    padding: 10px 20px;
+    color: white;
+    background-color: #FF0033;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* altındaki çizgiyi sil */
+}
+
+.gonder:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.topbar {  /* topbarın style ayarları yapılır */
+    background-color: #1a1a1a;
+    height: 70px;
+    border-radius: 20px;
+  }
+
+.topbar a {
+    font-family: "Arial", Helvetica, sans-serif;
+    float: left; /* öğeyi sol veya sağ tarafa hizala */
+    color: #FFFFFF;
+    text-align: center;
+    padding-left: 40px; /* etrafına boşluk */
+    padding-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+.topbar a.isim { 
+    padding-left: 820px;  /* ismin sayfanın en sağsında olmasını sağlar */
+}
+
+.kutu {
+    display: flex;   /* tüm ögelerin ayarlanmasını sağlar */
+    flex-direction: row; /* yan yana koymayı sağlar */
+}
+
+.form-kutusu{   /* girilecek boşlukların sitenin solunda olmasını sağlar */
+    float: left;
+    max-width: 400px;
+    margin: 20px;
+    width: 100%;
+}
+
+.form-kutusu input{
+    border: none;
+    background-color: #c6c6c6;
+    color: #464646;
+    margin: 5px; /* dışındaki boşluk */
+    padding: 12px; /* iç çevresindeki boşluk */
+    width: 300%;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.form-kutusu select { /* select olanlarda still */
+    background-color: #c6c6c6;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 12px;
+    width: 322%;
+    outline: none;
+
+}
+
+option:hover{  /* cursor üstüne getirilince saydam olur */
+    background: transparent;
+}
+
+select::placeholder {
+    color: #222;
+}
+
+.form-kutusu button { /* ders ekleme buttonu stillendirme */
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color:#c6c6c6;
+    border-radius: 5px;
+    color: #222;
+    padding: 12px;
+    border: none;
+}
+
+button:hover{  /* button üstüne geldiğinde boyutu büyür */
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.tablo table {
+    margin-top: 20px;
+    margin-left: 240px;
+    width: 80%; 
+    border-collapse: collapse; /* border birleştirir */
+    table-layout: fixed; /* sabitler */
+}
+
+.tablo th,.tablo td {
+    width: 20%; 
+    height: 50px; 
+    text-align: center; 
+    vertical-align: middle;     /* yazıyı yatauy ayarlar */
+    border: 1px solid #ddd; 
+    padding: 5px; 
+    box-sizing: border-box;     /* genişlik ve yükseklik sabitler */
+    overflow: hidden;   /* taşmasını engeller */
+    white-space: nowrap;    /* tek bir satırda tutar  */
+
+
+}
+
+.tablo th {
+    background-color: #f08282; /* tabloda en üst kısmı kırmızı yapar */
+    color: #f2f2f2;
+  } 
+
+tr:nth-child(even) {background-color: #c6c6c6;} /* çift olanların rengini değiştirir daha kolay okunabilmesi için*/
+tr:nth-child(odd) {background-color: #d7d5d5;}
+
+.ders {   /* eklenen derslerin styleını yapar */
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+  }
+
+
+
+
+
